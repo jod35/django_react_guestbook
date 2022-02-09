@@ -1,0 +1,160 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    background-color: rgb(7, 43, 80);
+}
+.headerText{
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.add-btn{
+    text-decoration: none;
+    color: darkslategrey;
+    padding: 12px;
+    text-transform: uppercase;
+    margin: 35px;
+    background-color: white;
+    border-radius: 10px;
+}
+.right{
+    margin-top: 20px;
+}
+.posts{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.post{
+    background-color: white;
+    cursor: pointer;
+    margin-top: 25px;
+    margin:10px;
+    min-height:50px;
+    border-radius: 10px;
+    min-width: 25%;
+    overflow: hidden;
+    padding: 20px;
+    transition: 1.2s all;
+}
+.post:hover{
+    transform: scale(1.1);
+}
+.title{
+    padding:20px;
+    background-color: white;
+}
+.content{
+    margin-left: 20px;
+    background-color: white;
+}
+.post-modal{
+    background-color: rgba(0, 0, 0, 0.322);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    height: 100vh;
+    display: none;
+}
+.post-modal-open{
+    background-color: rgba(0, 0, 0, 0.322);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    height: 100vh;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.form{
+    background-color:white;
+    width: 40%;
+    margin: auto;
+    z-index: 200;
+    height: 480px;
+    margin-top: 40px;
+    padding: 30px;
+    border-radius: 10px;
+}
+.form-header{
+    display: flex;
+    justify-content: space-between;
+}
+.closebtn{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(7, 43, 80);
+}
+.post-header-text{
+    font-size: 30px;
+}
+.form-area{
+    margin-top: 20px;
+}
+.form-input{
+    padding:10px
+}
+.form-group{
+    padding:20px
+}
+.form-control{
+    width: 100%;
+}
+.btn{
+    padding: 20px;
+    border: none;
+    background-color: rgb(7, 43, 80);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.post-header{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.del-btn{
+    text-decoration: none;
+    font-size: 20px;
+    color: dodgerblue;
+}
+.centerText{
+    height:80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.no-posts{
+    font-size: 50px;
+    color: white;
+}
+@media (max-width:700px) {
+    .form{
+        width: 80%;
+    }
+    .posts{
+        flex-direction: column;
+    }
+    .post{
+        width: 80%;
+    }
+    .add-btn{
+        padding:10px;
+    }
+}
